@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Mondserrat;
+    src: url(/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Fraunce;
+    src: url(/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+.root
+{
+    /* Primary */
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /*Neutral*/
+
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body
+{
+    background-color:green; /*hsl(30, 38%, 92%);*/
+    font-family: Mondserrat, Fraunce;
+}
+.attribution 
+{ 
+    font-size: 11px; text-align: center;
+}
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+.box0
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px 15px 15px 15px;
+}
+.box1
+{
+
+}
+.box2
+{
+
+}
+.box1 #img
+{
+    border-radius: 15px 0px 0px 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.ptype
+{
+
+}
+.pname
+{
+
+}
+.pdesc
+{
+
+}
+.pdiscount
+{
+
+}
+.pprice
+{
+
+}
+.pcart
+{
+
+}
+
+@media (min-width: 1440px)
+{
+
+.box0
+{
+
+}
+.img
+{
+
+}
+.pname
+{
+
+}
+.pdesc
+{
+
+}
+.pprice
+{
+
+}
+.pcart
+{
+    
+}
+
+
+}
