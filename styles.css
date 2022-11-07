@@ -22,8 +22,10 @@
 
 body
 {
-    background-color:green; /*hsl(30, 38%, 92%);*/
-    font-family: Mondserrat, Fraunce;
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+    background-color: hsl(30, 38%, 92%);
 }
 .attribution 
 { 
@@ -34,80 +36,209 @@ body
     color: hsl(228, 45%, 44%); 
 }
 
-.box0
-{
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 15px 15px 15px 15px;
-}
-.box1
-{
-
-}
-.box2
-{
-
-}
-.box1 #img
-{
-    border-radius: 15px 0px 0px 15px;
-    height: 100%;
-    width: 100%;
-}
-
-.ptype
-{
-
-}
-.pname
-{
-
-}
-.pdesc
-{
-
-}
-.pdiscount
-{
-
-}
-.pprice
-{
-
-}
-.pcart
-{
-
-}
-
 @media (min-width: 1440px)
 {
 
-.box0
+    .box
+    {
+        display: grid;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .box0
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 15px 15px 15px 15px;
+        margin: 8% 25% 6% 25%;
+    } 
+    .box2
+    {
+        width: 100%;
+        height: 100%;
+    }
+    img
+    {
+        object-fit: cover;
+        border-radius: 15px 0px 0px 15px;
+        width: 100%;
+        height: 100%;
+    }
+    .ptype
+    {
+        margin: 3rem 0rem 0rem 2rem;
+        font-weight: 700;
+        font-family: Mondserrat;
+        color: hsla(228, 12%, 48%, 0.800);
+    }
+    .pname
+    {
+        margin: 2rem 7rem 3rem 2rem;
+        font-weight: 700;
+        font-family: Fraunce;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .pdesc
+    {
+        color: hsla(228, 12%, 48%);
+        margin: 0rem 4rem 0rem 2rem; 
+        font-size: 1.8rem;
+        font-family: Mondserrat;
+        font-weight: 500;
+    }
+    .pprices
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    .pdiscount
+    {
+        margin: 2rem 0rem 3rem 2rem;
+        font-weight: 700;
+        font-family: Fraunce;
+        font-size: 3rem;
+        color: hsl(158, 36%, 37%);
+    }
+    .pprice
+    {
+        color: hsla(228, 12%, 48%);
+        margin: 0rem 4rem 0rem 2rem; 
+        font-size: 1rem;
+        font-family: Fraunce;
+        font-weight: 500;
+        text-decoration: line-through;
+    }
+    .pcart
+    {
+        margin: 10%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        background-color: hsl(158, 36%, 37%);
+    }
+    .pcart a
+    {
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        font-size: 25px;
+        font-weight: 700;
+        font-family: Mondserrat;
+        margin-left: 1rem;
+    }
+    .pcart:hover
+    {
+        background-color: hsl(159, 37%, 24%);
+    }
+}
+
+@media (max-width: 375px)
 {
 
-}
-.img
-{
-
-}
-.pname
-{
-
-}
-.pdesc
-{
-
-}
-.pprice
-{
-
-}
-.pcart
-{
+    .box
+    {
+        display: grid;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
     
-}
+    .box0
+    {
+        display: block;
+        align-items: center;
+        align-content: center;
+        margin: 2% 5% 5% 5%;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 15px 15px 15px 15px;
+    }
+    .box1
+    {
+        width: 350px;
+        height: 250px;
+    }
+    .box2
+    {
+        width: 100%;
+        height: 100%;
+    }
 
+    img {
+        object-fit: cover;
+        width: 350px;
+        height: 250px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .ptype
+    {
+        margin: 1rem 0rem 1rem 1.5rem;
+        font-family: Mondserrat;
+        color: hsla(228, 12%, 48%, 0.800);
+    }
+    .pname
+    {
+        margin: 0rem 1rem 1rem 1.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: Fraunce;
+    }
+    .pdesc
+    {
+        margin: 0rem 4rem 1rem 1.5rem;
+        color: hsla(228, 12%, 48%);
+        font-family: Mondserrat;
+    }
+    .pprices
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    .pdiscount
+    {
+        margin: 0;
+        font-family: Fraunce;
+        font-size: 2rem;
+        color: hsl(158, 36%, 37%);
+    }
+    .pprice
+    {
+        margin: 0;
+        color: hsla(228, 12%, 48%);
+        font-family: Fraunce;
+        text-decoration: line-through;
+    }
+    .pcart
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        margin: 5%;
+        padding: 2px 0px 2px 0px;
+        background-color: hsl(158, 36%, 37%);
+    }
+    .pcart a
+    {
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        font-family: Mondserrat;
+
+    }
+    .pcart:hover
+    {
+        background-color: hsl(159, 37%, 24%);
+    }
 
 }

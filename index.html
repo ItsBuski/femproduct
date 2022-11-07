@@ -10,11 +10,11 @@
 </head>
 
 <body>
-<section>
+<div class="box">
 <div class="box0">
 
     <div class="box1">
-      <img id="img" src="/images/image-product-desktop.jpg">
+      <img src="/images/image-product-desktop.jpg">
     </div>
       
     <div class="box2">  
@@ -32,19 +32,26 @@
           Perfumer-Creator for the House of CHANEL. 
        </p>
 
-        <p class="pdiscount">
-          $149.99
-        </p>
-      
-        <p class="pprice">
-          $169.99
-        </p>
-      
-
-        <a class="pcart" href="#">
-          Add to Cart
-        </a>
-
+       <div class="pprices">
+         <p class="pdiscount">
+           $149.99
+          </p>
+         <p class="pprice">
+            $169.99
+          </p>
+       </div>
+       <div class="pcart">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="6" cy="19" r="2" />
+            <circle cx="17" cy="19" r="2" />
+            <path d="M17 17h-11v-14h-2" />
+            <path d="M6 5l14 1l-1 7h-13" />
+          </svg>
+          <a href="#">
+            Add to Cart
+          </a>
+      </div>
 
     </div>
 </div>
@@ -53,7 +60,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Fabio</a>.
   </div>
-</section>
+</div>
 </body>
 
 </html>
